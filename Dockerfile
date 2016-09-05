@@ -6,5 +6,5 @@ RUN apt-get update \
   && wget -nv http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb -P /root/ \
   && dpkg -i /root/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb \
   && rm /root/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb \
-  && apt-get -y --purge remove wget && apt-get --purge auto-remove \
-  && apt-get clean && rm -rf /var/lib/apt/lists/*
+  && apt-get -y --purge remove wget \
+  && apt-get auto-remove && apt-get clean && rm -rf /var/lib/apt/lists/*

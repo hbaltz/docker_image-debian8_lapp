@@ -7,4 +7,4 @@ RUN apt-get update \
   && dpkg -i /root/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb \
   && rm /root/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb \
   && apt-get -y --purge remove wget \
-  && apt-get auto-remove && apt-get clean && rm -rf /var/lib/apt/lists/*
+  && apt-get clean && rm -rf /var/lib/apt/lists/*

@@ -1,3 +1,10 @@
 FROM ajbisoft/debian8_lap
 MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
-RUN apt-get update && apt-get install -y php5-pgsql postgresql-client && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+  && apt-get install -y wget php5-pgsql postgresql-client fontconfig libfontconfig1 libfreetype6 libpng12-0 libjpeg62-turbo \
+    libx11-6 libxext6 libxrender1 xfonts-base xfonts-75dpi \
+  && wget http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb /root/
+  && dpkg -i /root/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb \
+  && rm /root/wkhtmltox-0.12.2.1_linux-jessie-amd64.deb \
+  && apt-get --purge remove wget && apt-get --purge auto-remove \
+  && apt-get clean && rm -rf /var/lib/apt/lists/*

@@ -1,5 +1,5 @@
 FROM ajbisoft/debian8_lap
-MAINTAINER Jakub Kwiatkowski "jakub@ajbisoft.pl"
+MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
 RUN apt-get update \
   && apt-get install -y wget php5-pgsql postgresql-client fontconfig libfontconfig1 libfreetype6 libpng12-0 libjpeg62-turbo \
     libx11-6 libxext6 libxrender1 xfonts-base xfonts-75dpi \

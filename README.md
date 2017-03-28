@@ -18,7 +18,7 @@ There are two main run-time settings that may need to be passed to newly created
 ## Example
 
 To successfully start a new container using this image please specify port (here port 80) and volume options as in following example:
-`docker run -dp 80:80 -v <path_to_your_datadir>:/var/www/ --name <your-app-name> ajbisoft/debian8-lapp`
+`docker run -dp 80:80 -v <path_to_your_datadir>:/var/www/ --name <your-app-name> hbaltz/rpi-lapp`
 
 ## Summary
 

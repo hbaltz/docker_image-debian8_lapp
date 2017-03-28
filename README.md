@@ -1,4 +1,4 @@
-# Docker image: debian8_lapp
+# Docker image: rpi-lapp
 
 ## Description
 

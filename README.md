@@ -2,7 +2,7 @@
 
 ## Description
 
-Official Debian 8 (debian:8) + apache2 + php5 + postgresql-client docker image with some customization:
+Rapsbian + apache2 + php5 + postgresql-client docker image with some customization:
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
 * /etc/apt/sources.list modified to include jessie-updates and to use Polish mirror by default
@@ -23,5 +23,3 @@ To successfully start a new container using this image please specify port (here
 ## Summary
 
 This docker image is best suited for PHP applications that depend on PostgreSQL database backend. It works well not only with simple PHP websites, but also with ie. Laravel framework (just mount your project under /var/www).
-
-Should you need to use a different database backend (like MySQL) with your project, please see my other docker images!

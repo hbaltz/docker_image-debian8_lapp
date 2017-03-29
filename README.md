@@ -1,5 +1,7 @@
 # Docker image: rpi-lapp
 
+* [Docker hub repository](https://hub.docker.com/r/hbaltz/rpi-lapp/)
+
 ## Description
 
 Rapsbian + apache2 + php5 + postgresql-client docker image with some customization:
